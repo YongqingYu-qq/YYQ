@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication_Core_mvc.Models.Position>
+@{
+    ViewData["Title"] = "Default";
+}
+
+<h1>Default</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>PositionId</th>
+            <th>PositionName</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PositionId</td>
+                <td>@item.PositionName</td>
+            </tr>
+        }
+    </tbody>
+</table>

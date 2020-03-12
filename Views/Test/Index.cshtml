@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WebApplication_Core_mvc.Models.Product>
+
+
+
+@foreach (var item in Model)
+{
+    if (ViewBag.Listdata.Contains(item.id))
+    {
+        <p>@item.amount</p><br />
+    }
+}
